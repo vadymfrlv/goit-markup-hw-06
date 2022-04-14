@@ -44,6 +44,16 @@ body {
 }
 
 /* Навигация */
+
+.site-nav .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
