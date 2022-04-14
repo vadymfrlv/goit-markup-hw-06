@@ -1,10 +1,9 @@
-
 /* палитра макета
     - фон #FFFFFF
     - дополнительный фон #F5F4FA
     - фон футера #2F303A
-    - цвет текста основной #212121
-    - цвет текста вторичный #757575
+    - цвет заголовков #212121
+    - оснойвной цвет текста #757575
     - акцент #2196F3
 */
 
@@ -12,30 +11,29 @@
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
     --footer-bg-color: #2F303A;
-    --primary-text-color: #212121;
-    --secondary-text-color:  #757575;
+    --pr-text-color: #757575;
+    --title-text-color:  #212121;
     --accent-color: #2196F3;
-}
-
-body {
-    color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
-
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
 }
 
 .list {
     list-style: none;
 }
 
-.link {
-    text-decoration: none;
+body {
+    color: var(--pr-text-color);
+    background-color: var(--primary-bg-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* Лого */
 .logo {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
+    
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -48,9 +46,9 @@ body {
 }
 
 /* Навигация */
-
 .site-nav .link {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -63,8 +61,13 @@ body {
     color: var(--accent-color);
 }
 
-.auth-nav {
-    color: var(--primary-text-color);
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Контакты шапка */
+.auth-nav .head-contact {
+    color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -72,5 +75,97 @@ body {
     text-decoration: none;
 }
 
+.auth-nav .head-contact:hover,
+.auth-nav .head-contact:focus {
+    color: var(--accent-color);
+}
 
 
+/* Герой */
+.hero {
+    background-color: var(--footer-bg-color);
+}
+
+.hero-title {
+    color: var(--primary-bg-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Button */
+.button {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em; 
+    cursor: pointer;
+}
+
+
+/* Секции */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Feauters */
+.features-list .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.features-list .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Team */
+
+
+/* Футер */
+.footer,
+.footer .logo {
+    background-color: var(--footer-bg-color);
+    color: var(--primary-bg-color);
+}
+
+.footer-location,
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-location {
+    color: var(--primary-bg-color);
+}
+
+.footer-location:hover,
+.footer-location:focus {
+    color: var(--accent-color);
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);
+}
