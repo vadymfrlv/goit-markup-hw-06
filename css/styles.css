@@ -1,8 +1,53 @@
 
-/* палитра макета */
+/* палитра макета
+    - фон #FFFFFF
+    - дополнительный фон #F5F4FA
+    - фон футера #2F303A
+    - цвет текста основной #212121
+    - цвет текста вторичный #757575
+    - акцент #2196F3
+*/
 
 :root {
-
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
+    --primary-text-color: #212121;
+    --secondary-text-color:  #757575;
+    --accent-color: #2196F3;
 }
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Лого */
+.logo {
+    color: var(--primary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: #2196F3;
+}
+
+/* Навигация */
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
 
 
