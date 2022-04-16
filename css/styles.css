@@ -103,7 +103,6 @@ body {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
