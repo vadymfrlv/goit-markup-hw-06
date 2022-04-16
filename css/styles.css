@@ -67,7 +67,8 @@ body {
 
 /* Контакты шапка */
 .auth-nav .head-contact {
-    color: var(--text-color);
+    color:  var(--pr-text-color);
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -88,6 +89,7 @@ body {
 
 .hero-title {
     color: var(--primary-bg-color);
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -101,17 +103,19 @@ body {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em; 
+    
     cursor: pointer;
 }
-
 
 /* Секции */
 .section-title {
     color: var(--title-text-color);
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -122,6 +126,7 @@ body {
 /* Feauters */
 .features-list .title {
     color: var(--title-text-color);
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -137,7 +142,22 @@ body {
 }
 
 /* Team */
+.section.team {
+    background-color: var(--secondary-bg-color);
+}
 
+.team-list .title,
+.team-list .position {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-list .position {
+    color: var(--pr-text-color);
+}
 
 /* Футер */
 .footer,
@@ -168,4 +188,46 @@ body {
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-color);
+}
+
+/* Портфолио фильтр */
+.button.portfolio {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em; 
+    
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+/* Портфолио карточки */
+
+.cards .card-link {
+    color: var(--title-text-color);
+    
+    text-decoration: none;
+}
+
+.cards .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.cards p {
+    color: var(--pr-text-color);
+    
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
