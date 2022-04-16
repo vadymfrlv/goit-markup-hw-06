@@ -42,7 +42,7 @@ body {
 }
 
 .logo-accent {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* Навигация */
@@ -209,7 +209,6 @@ body {
 }
 
 /* Портфолио карточки */
-
 .cards .card-link {
     color: var(--title-text-color);
     
