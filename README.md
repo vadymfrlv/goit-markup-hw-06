@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-HTML CSS HW 1
+# goit-markup-hw-02
+
+HTML CSS HW 2
