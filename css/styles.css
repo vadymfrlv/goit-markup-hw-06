@@ -16,10 +16,6 @@
     --accent-color: #2196F3;
 }
 
-.list {
-    list-style: none;
-}
-
 body {
     color: var(--pr-text-color);
     background-color: var(--primary-bg-color);
@@ -28,6 +24,33 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+
+/* Утилиты */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Лого */
@@ -83,23 +106,31 @@ body {
 
 
 /* Герой */
-.hero {
+.hero { 
+    text-align: center;
+
     background-color: var(--footer-bg-color);
 }
 
 .hero-title {
+    margin-bottom: 30px;
+
     color: var(--primary-bg-color);
     
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
 }
 
 /* Button */
 .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 
@@ -122,8 +153,16 @@ body {
     letter-spacing: 0.03em;
 }
 
+.section.feauters,
+.section.presentation {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 /* Feauters */
 .features-list .title {
+    margin-bottom: 10px;   
+
     color: var(--title-text-color);
     
     font-weight: 700;
@@ -133,15 +172,11 @@ body {
     text-decoration: none;
 }
 
-.features-list .text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-
 /* Team */
 .section.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
     background-color: var(--secondary-bg-color);
 }
 
@@ -202,8 +237,8 @@ body {
     cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.button.portfolio:hover,
+.button.portfolio:focus {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 }

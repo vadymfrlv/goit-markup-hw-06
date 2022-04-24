@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб Студия</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Шапка -->
     <header>
-        <nav>
+        <div class="container">
+        <nav">
             <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
             <ul class="site-nav list">
                 <li><a class="link current" href="">Студия</a></li>
@@ -19,10 +21,11 @@
                 <li><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
-         <ul class="auth-nav list">
+        <ul class="auth-nav list">
              <li><a class="head-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
              <li><a class="head-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-         </ul>
+        </ul>
+        </div>
     </header>
   
     <main>
@@ -34,7 +37,8 @@
         </section>
 
         <!-- Наши преимущества -->
-        <section class="section">
+        <section class="section feauters">
+            <div class="container">
             <h2 class="section-title">Наши преимущества</h2>
             <ul class="features-list list">
                 <li>
@@ -54,20 +58,24 @@
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- Чем мы занимаемся -->
-        <section class="section">
+        <section class="section presentation">
+            <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="work-list list">
                 <li><img src="./images/img-1.jpg" alt="Разработка мобильного приложения набирая код на клавиатуре" width="370" height="294"/></li>
                 <li><img src="./images/img-2.jpg" alt="Человек держит в руках смартфон сидя за ноутбуком" width="370" height="294"/></li>
                 <li><img src="./images/img-3.jpg" alt="Выбор цвета на планшете в цветовой палитре" width="370" height="294"/></li>
             </ul>
+            </div>
         </section>
 
         <!-- Наша команда -->
         <section class="section team">
+            <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="team-list list">
                 <li>
@@ -91,11 +99,13 @@
                     <p class="position" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
     <!-- Футер -->
     <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
         <address>
           <ul class="footer-contact list">
@@ -105,6 +115,7 @@
             <li><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
