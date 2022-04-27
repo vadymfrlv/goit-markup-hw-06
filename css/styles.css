@@ -28,7 +28,7 @@ body {
 
 /* Утилиты */
 .list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -51,6 +51,24 @@ h6,
 p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Шапка */
@@ -193,10 +211,6 @@ p {
 }
 
 /* Features */
-.hidden {
-    display: none;
-}
-
 .features-list {
     display: flex;
 }
@@ -239,10 +253,6 @@ p {
     margin-right: 30px;
 }
 
-.work-list .image {
-    display: block;
-}
-
 .work-list .item:nth-child(3n) {
     margin-right: 0px;
 }
@@ -259,11 +269,6 @@ p {
 
 .team-list {
     display: flex;
-}
-
-.team-list .image {
-    display: block;
-    margin-bottom: 30px;
 }
 
 .team-list .item {
@@ -289,6 +294,7 @@ p {
 }
 
 .team-list .title {
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team-list .position {
@@ -406,11 +412,6 @@ p {
     margin-bottom: 0;
 }
 
-.cards .image {
-    display: block;
-    margin-bottom: 20px;
-}
-
 .description { 
     min-width: 322px;
     margin-left: 24px;
@@ -424,6 +425,7 @@ p {
 }
 
 .card-title {
+    margin-top: 20px;
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -432,7 +434,7 @@ p {
     letter-spacing: 0.06em;
 }
 
-.description p {
+.card-description p {
     margin-bottom: 20px;
 
     color: var(--pr-text-color);
