@@ -58,17 +58,17 @@ img {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
   
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Шапка */
@@ -155,12 +155,11 @@ img {
     color: var(--accent-color);
 }
 
-
 /* Герой */
 .hero { 
-    text-align: center;
-
     background-color: var(--footer-bg-color);
+
+    text-align: center;
 }
 
 .hero-title {
@@ -275,8 +274,8 @@ img {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
 
-    background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
+    /* background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px; */
 }
 
 .team-list .item:last-child {
@@ -286,7 +285,6 @@ img {
 .team-list .title,
 .team-list .position {
     color: var(--title-text-color);
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -307,8 +305,8 @@ img {
 /* Футер */
 .footer,
 .footer .logo {
-    background-color: var(--footer-bg-color);
     color: var(--primary-bg-color);
+    background-color: var(--footer-bg-color);
 }
 
 .footer-items {
@@ -400,8 +398,6 @@ img {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .cards .item:nth-child(3n) {
@@ -412,20 +408,20 @@ img {
     margin-bottom: 0;
 }
 
-.description { 
-    min-width: 322px;
-    margin-left: 24px;
-    margin-right: 24px;
-}
-
 .card-link {
     color: var(--title-text-color);
-    
     text-decoration: none;
 }
 
-.card-title {
-    margin-top: 20px;
+.card-specification { 
+    min-width: 322px;
+    padding: 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.card-object {
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -434,9 +430,7 @@ img {
     letter-spacing: 0.06em;
 }
 
-.card-description p {
-    margin-bottom: 20px;
-
+.card-description {
     color: var(--pr-text-color);
     font-size: 16px;
     line-height: 1.88;
