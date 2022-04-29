@@ -39,7 +39,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 h1,
@@ -320,6 +320,26 @@ img {
   font-weight: 400;
   color: var(--pr-text-color);
 }
+
+/* Клиенты */
+.icon {
+  padding: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  color: #4fd324;
+  margin: 0;
+}
+
+.icon:hover {
+  color: #2196f3;
+}
+
+.icon-icon {
+  fill: currentColor;
+}
+
+/* Присоединяйтесь */
 
 /* Футер */
 .footer {
