@@ -216,7 +216,7 @@ img {
 }
 
 .features-list .item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 
@@ -271,7 +271,7 @@ img {
 }
 
 .team-list .item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 
   /* background-color: #FFFFFF;
@@ -405,7 +405,7 @@ img {
 }
 
 .cards .item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
