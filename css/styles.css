@@ -156,11 +156,20 @@ img {
 }
 
 /* ГЕРОЙ */
-.hero {
-  background-color: var(--footer-bg-color);
-
+.section-hero {
   padding: 200px 0;
+  max-width: 1600px;
+  max-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
   text-align: center;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-color: var(--footer-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -182,8 +191,6 @@ img {
   display: inline-block;
   border-radius: 4px;
 
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -195,6 +202,9 @@ img {
 .button.hero {
   padding: 10px 32px;
   min-width: 200px;
+
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
 }
 
 /* СЕКЦИИ */
@@ -277,8 +287,11 @@ img {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
 
-  /* background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px; */
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .team-list .item:last-child {
@@ -297,10 +310,6 @@ img {
 .team-list .team-description {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-
-  background-color: var(--primary-bg-color);
 }
 
 .team-list .title {
@@ -399,6 +408,9 @@ img {
 .button.portfolio:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Портфолио карточки */
@@ -448,4 +460,9 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.cards .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.12);
 }
