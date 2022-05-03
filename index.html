@@ -54,7 +54,7 @@
       <!-- Герой -->
       <section class="section-hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button hero" type="button">Заказать услугу</button>
+        <button class="button hero" type="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- Наши преимущества -->
@@ -93,29 +93,44 @@
         <div class="container">
           <h2 class="section-title work">Чем мы занимаемся</h2>
           <ul class="work-list list">
-            <li class="item">
-              <img
-                src="./images/img-1.jpg"
-                alt="Разработка мобильного приложения набирая код на клавиатуре"
-                width="370"
-                height="294"
-              />
+            <li class="work-item">
+              <div class="item-image">
+                <img
+                  src="./images/img-1.jpg"
+                  alt="Разработка мобильного приложения набирая код на клавиатуре"
+                  width="370"
+                  height="294"
+                />
+                <div class="item-description">
+                  <p class="description-text">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
-            <li class="item">
-              <img
-                src="./images/img-2.jpg"
-                alt="Человек держит в руках смартфон сидя за ноутбуком"
-                width="370"
-                height="294"
-              />
+            <li class="work-item">
+              <div class="item-image">
+                <img
+                  src="./images/img-2.jpg"
+                  alt="Человек держит в руках смартфон сидя за ноутбуком"
+                  width="370"
+                  height="294"
+                />
+                <div class="item-description">
+                  <p class="description-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
-            <li class="item">
-              <img
-                src="./images/img-3.jpg"
-                alt="Выбор цвета на планшете в цветовой палитре"
-                width="370"
-                height="294"
-              />
+            <li class="work-item">
+              <div class="item-image">
+                <img
+                  src="./images/img-3.jpg"
+                  alt="Выбор цвета на планшете в цветовой палитре"
+                  width="370"
+                  height="294"
+                />
+                <div class="item-description">
+                  <p class="description-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -391,5 +406,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal" type="button" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
