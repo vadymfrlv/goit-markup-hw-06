@@ -251,6 +251,12 @@ img {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 2500ms var(--time-function);
+}
+
+.button.hero:hover,
+.button.hero:focus {
+  background-color: #188ce8;
 }
 
 /* СЕКЦИИ */
@@ -754,6 +760,7 @@ img {
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
