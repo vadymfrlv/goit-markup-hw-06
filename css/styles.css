@@ -256,7 +256,7 @@ img {
 
 .button.hero:hover,
 .button.hero:focus {
-  background-color: red;
+  background-color: #188ce8;
   transition: background-color 2500ms var(--time-function);
 }
 
