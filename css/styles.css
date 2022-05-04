@@ -256,8 +256,8 @@ img {
 
 .button.hero:hover,
 .button.hero:focus {
-  background-color: #daea29;
-  transition: background-color 250ms var(--time-function);
+  background-color: #85ea38;
+  transition: background-color 2500ms var(--time-function);
 }
 
 /* СЕКЦИИ */
