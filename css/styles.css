@@ -11,7 +11,7 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
-  --pr-text-color: #3b1e1e;
+  --pr-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
 
@@ -322,6 +322,8 @@ img {
 }
 
 .features-list .title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
