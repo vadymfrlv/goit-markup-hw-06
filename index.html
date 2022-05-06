@@ -366,7 +366,7 @@
         </div>
 
         <div class="join">
-          <h3 class="join-title">Присоединяйтесь</h3>
+          <h3 class="footer-titles">Присоединяйтесь</h3>
           <ul class="join-list list">
             <li class="join-item">
               <a class="join-link" href="">
@@ -398,6 +398,16 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <h3 class="footer-titles">Подпишитесь на рассылку</h3>
+          <form class="form-subscribe" autocomplete="off">
+            <label class="form-field">
+              <input class="form-input" type="email" name="mail" placeholder="E-mail" />
+            </label>
+            <button class="button subscribe" type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -408,6 +418,55 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+
+        <form class="form-modal">
+          <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+          <div class="form-field-modal">
+            <label class="label-modal" for="name">Имя</label>
+            <input class="input-modal" type="name" name="name" id="name" />
+            <svg class="icon-modal" width="18px" height="18px">
+              <use href="./images/sprite.svg#name"></use>
+            </svg>
+          </div>
+          <div class="form-field-modal">
+            <label class="label-modal" for="tel">Телефон</label>
+            <input class="input-modal" type="tel" name="tel" id="tel" />
+            <svg class="icon-modal" width="18px" height="18px">
+              <use href="./images/sprite.svg#tel"></use>
+            </svg>
+          </div>
+          <div class="form-field-modal">
+            <label class="label-modal" for="email">Почта</label>
+            <input class="input-modal" type="email" name="email" id="email" />
+            <svg class="icon-modal" width="18px" height="18px">
+              <use href="./images/sprite.svg#email"></use>
+            </svg>
+          </div>
+          <div class="form-field-modal comment">
+            <label class="label-modal" for="comment">Комментарий</label>
+            <textarea
+              class="comment-modal"
+              type="text"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+          <label class="lable-policy" for="policy">
+            <input class="input-checkbox" type="checkbox" name="policy" id="policy" />
+            <span class="checkbox-area">
+              <svg class="icon-checkbox" width="16px" height="15px">
+                <use href="./images/sprite.svg#check"></use>
+              </svg>
+            </span>
+            <span class="text-checkbox""
+              >Соглашаюсь с рассылкой и принимаю<a class="policy-link" href="">Условия договора</a>
+            </span>
+          </label>
+          </div>
+          <button class="button submit-modal" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
