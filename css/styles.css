@@ -618,7 +618,7 @@ img {
   background-color: var(--accent-color);
 }
 
-/* ФУТЕР ПОДПИШИСЬ */
+/* ФУТЕР ПОДПИСКА */
 
 .subscribe {
   margin-left: 93px;
@@ -1018,6 +1018,9 @@ img {
 .input-checkbox {
   appearance: none;
   position: absolute;
+}
+
+.input-checkbox:focus {
 }
 
 .input-checkbox:checked + .checkbox-area {
