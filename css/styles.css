@@ -1020,9 +1020,6 @@ img {
   position: absolute;
 }
 
-.input-checkbox:focus {
-}
-
 .input-checkbox:checked + .checkbox-area {
   border-color: transparent;
   background-color: var(--accent-color);
@@ -1037,6 +1034,11 @@ img {
   border: 2px solid var(--title-text-color);
 
   border-radius: 2px;
+}
+
+.input-checkbox:hover + .checkbox-area,
+.input-checkbox:focus + .checkbox-area {
+  border: 2px solid var(--accent-color);
 }
 
 .icon-checkbox {
