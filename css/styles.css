@@ -1055,8 +1055,6 @@ img {
 }
 
 .policy-link {
-  padding-left: 5px;
-
   color: var(--accent-color);
   cursor: pointer;
 }
